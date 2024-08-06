@@ -55,12 +55,12 @@ const Navbar = () => {
 
             {/* Mobile menu */}
             {isMenuOpen && (
-                <div className='sm:hidden bg-white border-t border-gray-300'>
+                <div className='sm:hidden border-t border-gray-300'>
                     {menu.map(item => (
                         <a
                             key={item.id}
                             href={item.link}
-                            className='block p-4 border-b hover:bg-gray-100'
+                            className='block p-4 border-b'
                         >
                             {item.name}
                         </a>
@@ -101,45 +101,63 @@ const Navbar = () => {
                     </button>
                     <div className='absolute top-full left-0 w-[250px] h-[200px] bg-[#08394B] shadow-lg border-t border-blue-500 hidden group-hover:block'>
                         <ul className='p-4'>
-                            <li><a href='#' className='block p-2 hover:bg-gray-100'>
-                                <div className='w-full h-12 border-b-2 border-gray-400 pt-4 flex justify-between items-center'>
-                                    <span className='text-white hover:text-black'>Our Team Members</span>
-                                    <IoIosArrowForward className='text-white' />
-                                </div></a></li>
-                            <li><a href='#' className='block p-2 hover:bg-gray-100'>
-                                <div className='w-full h-12 border-b-2 border-gray-400 pt-4 flex justify-between items-center'>
-                                    <span className='text-white hover:text-black'>Accreditation</span>
-                                    <IoIosArrowForward className='text-white' />
-                                </div></a></li>
-                            <li><a href='#' className='block p-2 hover:bg-gray-100'>
-                                <div className='w-full h-12 border-b-2 border-gray-400 pt-4 flex justify-between items-center'>
-                                    <span className='text-white hover:text-black'>Be There Movement</span>
-                                    <IoIosArrowForward className='text-white' />
-                                </div></a></li>
+                            <li>
+                                <a href='#' className='block p-2'>
+                                    <div className='w-full h-12 border-b-2 border-gray-400 pt-4 flex justify-between items-center'>
+                                        <span className='text-white hover:text-gray-300'>Our Team Members</span>
+                                        <IoIosArrowForward className='text-white' />
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#' className='block p-2'>
+                                    <div className='w-full h-12  border-b-2 border-gray-400 pt-4 flex justify-between items-center'>
+                                        <span className='text-white hover:text-gray-300'>Accreditation</span>
+                                        <IoIosArrowForward className='text-white' />
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#' className='block p-2'>
+                                    <div className='w-full h-12 border-b-2 border-gray-400 pt-4 flex justify-between items-center'>
+                                        <span className='text-white hover:text-gray-300'>Be There Movement</span>
+                                        <IoIosArrowForward className='text-white' />
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-                <div className='relative group'>
+                <div className='relative group '>
                     <button className='border-r-2 border-r-blue-500 px-4 py-2 text-white font-sans hover:bg-[#08394B]'>
                         Advice and Services
                     </button>
-                    <div className='absolute top-full left-0 w-[300px] h-[250px] bg-[#08394B] shadow-lg border-t border-blue-500 hidden group-hover:block'>
+                    <div className='absolute top-full left-0 w-[300px] h-[250px] bg-[#08394B] shadow-lg  border-t border-blue-500 hidden group-hover:block'>
                         <ul className='p-4'>
-                            <li><a href='#' className='block p-2 hover:bg-gray-100'>
-                                <div className='w-full h-12 border-b-2 border-gray-400 pt-4 flex justify-between items-center'>
-                                    <span className='text-white hover:text-black'>News</span>
-                                    <IoIosArrowForward className='text-white' />
-                                </div></a></li>
-                            <li><a href='#' className='block p-2 hover:bg-gray-100'>
-                                <div className='w-full h-12 border-b-2 border-gray-400 pt-4 flex justify-between items-center'>
-                                    <span className='text-white hover:text-black'>Guides</span>
-                                    <IoIosArrowForward className='text-white' />
-                                </div></a></li>
-                            <li><a href='#' className='block p-2 hover:bg-gray-100'>
-                                <div className='w-full h-12 border-b-2 border-gray-400 pt-4 flex justify-between items-center'>
-                                    <span className='text-white hover:text-black'>FAQ</span>
-                                    <IoIosArrowForward className='text-white' />
-                                </div></a></li>
+                            <li>
+                                <a href='#' className='block p-2 hover:bg-transparent'>
+                                    <div className='w-full  h-12 border-b-2 border-gray-400 pt-4 flex justify-between items-center'>
+                                        <span className='text-white '>News</span>
+                                        <IoIosArrowForward className='text-white' />
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#' className='block p-2'>
+                                    <div className='w-full h-12 border-b-2 border-gray-400 pt-4 flex justify-between items-center'>
+                                        <span className='text-white hover:text-gray-300'>Guides</span>
+                                        <IoIosArrowForward className='text-white' />
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href='#' className='block p-2'>
+                                    <div className='w-full h-12 border-b-2 border-gray-400 pt-4 flex justify-between items-center'>
+                                        <span className='text-white hover:text-gray-300'>FAQ</span>
+                                        <IoIosArrowForward className='text-white' />
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
